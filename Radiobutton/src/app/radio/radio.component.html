@@ -1,0 +1,22 @@
+<article>
+<h1> Angular Selecciona radio button! </h1>
+<h1><span>Selecciona  nombre y fecha </span></h1>  
+
+
+      <div *ngFor="let day of day">
+        <input
+         type="radio" 
+         name= "day"  
+        value= "{{day}}"
+        (change)="radioChangeHandler($event)" >
+
+        <i>{{day}}</i>
+
+      </div>
+
+  <p><span>Tu secleccion es: </span><b>{{selectedDay}}</b></p>
+
+</article>
+
+
+<!-- Fill the HTML with respective directives -->
